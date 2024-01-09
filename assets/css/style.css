@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+@font-face {
+    font-family: 'bohemian_soul';
+    src: url('../fonts/bohemian_soul/Bohemian\ Soul.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_md_bt';
+    src: url('../fonts/futura_md_bt/FuturaMediumBT.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_md_bt';
+    src: url('../fonts/futura_md_bt/FuturaBoldBT.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura_Lt_BT';
+    src: url('../fonts/Futura_Lt_BT/FUTURAL.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_xblkcnit_bt';
+    src: url('../fonts/futura_xblkcnit_bt/FuturaExtraBlackCondensedItalicBT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "futura_md_bt", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    padding: 10px 22px;
+}
+
+
+
+header {
+    position: relative;
+}
+
+.headerBg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .container .headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.headerTopRight {
+    display: flex;
+    align-items: center;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select select {
+    display: none;
+    /* Hide the original select box */
+}
+
+.select-styled {
+    width: 52px;
+    height: 22px;
+    /* display: inline-block; */
+    padding: 3px 0px;
+    padding-right: 25px;
+    padding-left: 5px;
+    border: none;
+    font-family: 'Teko', sans-serif;
+    background-color: #fff;
+    color: #0094FF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    /* Text color */
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
+.select-styled:after {
+    content: '';
+    width: 13px;
+    height: 12px;
+    background: url('../images/arrow-down.svg') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 40%;
+    right: 6px;
+    margin-top: -3px;
+    pointer-events: none;
+}
+
+/* Style the dropdown content (options) */
+.select-options {
+    width: fit-content;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* Background color */
+    color: #0094FF;
+    padding-left: 5px;
+    /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.custom-select.open .select-options {
+    width: 100% !important;
+    display: block;
+}
+
+.custom-select.open .select-options li {
+    font-family: 'Teko', sans-serif;
+    line-height: 22px;
+    font-size: 21px;
+}
+
+
+.headerTopRight img {
+    margin-left: 15px;
+}
+
+
+.headerBottom {
+    position: relative;
+    z-index: 10;
+}
+
+.headerBottom span {
+    font-family: "bohemian_soul", sans-serif;
+    color: #0094FF;
+    font-size: 28px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.headerBottom span:first-child {
+    left: 14%;
+    bottom: -68px;
+    rotate: 25deg;
+}
+
+.headerBottom span:nth-child(2) {
+    left: 21%;
+    bottom: -72px;
+    rotate: 21deg;
+}
+
+.headerBottom span:nth-child(3) {
+    left: 28%;
+    bottom: -80px;
+    rotate: 17deg;
+}
+
+.headerBottom span:nth-child(4) {
+    left: 34%;
+    bottom: -84px;
+    rotate: 15deg;
+}
+
+.headerBottom span:nth-child(5) {
+    left: 37%;
+    bottom: -88px;
+    rotate: 15deg;
+}
+
+.headerBottom span:nth-child(6) {
+    left: 42%;
+    bottom: -88px;
+    rotate: 10deg;
+}
+
+.headerBottom span:nth-child(7) {
+    right: 40%;
+    bottom: -90px;
+    rotate: -9deg;
+}
+
+.headerBottom span:nth-child(8) {
+    right: 33%;
+    bottom: -87px;
+    rotate: -12deg;
+}
+
+.headerBottom span:nth-child(9) {
+    right: 26%;
+    bottom: -84px;
+    rotate: -13deg;
+}
+
+.headerBottom span:nth-child(10) {
+    right: 20%;
+    bottom: -79px;
+    rotate: -16deg;
+}
+
+.headerBottom span:nth-child(11) {
+    right: 13%;
+    bottom: -74px;
+    rotate: -19deg;
+}
+
+.headerBottom span:nth-child(12) {
+    right: 7%;
+    bottom: -67px;
+    rotate: -23deg;
+}
+
+.headerBottom span:last-child {
+    right: 4%;
+    bottom: -62px;
+    rotate: -25deg;
+}
+
+
+
+
+
+
+/* first page styles */
+.banner {
+    height: 508px;
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+}
+
+.banner h1 {
+    font-size: 20px;
+    font-family: "bohemian_soul", sans-serif;
+    text-align: center;
+}
+
+
+.bannerInfo {
+    padding: 12px 0;
+}
+
+.bannerInfo p {
+    font-size: 17px;
+    color: #005E93;
+}
+
+
+
+.article {
+    padding: 30px 0;
+    background-color: #D3EDFF;
+}
+
+.articleHeading {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+
+.articleHeading::after {
+    width: 100%;
+    height: 3px;
+    background-color: #005E93;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+}
+
+.articleHeading h2 {
+    font-size: 30px;
+    color: #005E93;
+    margin-right: 11px;
+    font-family: "futura_xblkcnit_bt", sans-serif;
+}
+
+
+.articleItem {
+    width: 86%;
+    height: 193px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.articleItemInner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.articleItem::before {
+    width: 100%;
+    height: 100%;
+    background-color: #EAF3FF;
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    z-index: 2;
+}
+
+.articleItem::after {
+    width: 105%;
+    height: 100%;
+    background-color: #005E93;
+    content: '';
+    position: absolute;
+    left: 33px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.articleItemLeft {
+    width: 42%;
+    height: 100%;
+}
+
+.articleItemLeft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articleItemRight {
+    width: 58%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articleItemRight h3 {
+    font-size: 16px;
+}
+
+.articleBtnWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.articleItemRight button {
+    width: 79px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.articleItemRight button img {
+    margin-left: 10px;
+}
+
+
+
+
+
+.video {
+    background-color: #D3EDFF;
+    padding-bottom: 110px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 208px;
+}
+
+
+
+
+
+
+footer {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footerBg {
+    width: 100%;
+    position: absolute;
+    top: -23%;
+    left: 0;
+}
+
+.footerTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.footerTop ul li {
+    color: #0094FF;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footerTop ul li a {
+    font-family: "Futura_Lt_BT", sans-serif;
+}
+
+.footerTop ul li a span {
+    margin-right: 5px;
+}
+
+
+
+.footerSocial a {
+    margin-bottom: 23px;
+    display: block;
+}
+
+
+
+
+.footerBottom {
+    text-align: center;
+}
+
+.footerBottom img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+
+.footerBottom h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+    color: #0094FF;
+}
+
+.footerBottom p {
+    font-size: 12px;
+    font-style: italic;
+    color: #0094FF;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+    max-width: 240px;
+}
+
+
+.footerCopyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footerCopyright img {
+    margin: 0;
+    margin-right: 8px;
+}
+
+.footerCopyright p {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Futura_Lt_BT", sans-serif;
+    font-style: normal;
+}
+
+/* first page styles ends */
