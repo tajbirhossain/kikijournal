@@ -273,6 +273,7 @@ header .container .headerTop {
 
 
 .bannerInfo {
+    background-color: #FAFAFA;
     padding: 12px 0;
 }
 
@@ -425,6 +426,7 @@ header .container .headerTop {
 footer {
     position: relative;
     padding-bottom: 10px;
+    background-color: #FAFAFA;
 }
 
 .footerBg {
@@ -514,3 +516,79 @@ footer {
 }
 
 /* first page styles ends */
+
+
+
+
+
+
+
+/* second page styles */
+.articleBanner {
+    height: fit-content;
+    background-image: unset;
+    background-color: #005E93;
+    padding-top: 100px;
+}
+.articleBanner p {
+    text-align: center;
+    color: #E6F5FF;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.articleBanner img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+
+
+.articleText {
+    background-color: #D3EDFF;
+    padding-bottom: 190px;
+}
+.articleText .container {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+.articleText p {
+    font-size: 16px;
+    color: #000;
+}
+
+.articleText .manImg {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+.articleText small {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.articleGoto {
+    width: 100%;
+    padding: 10px 22px;
+}
+.articleGotoInner {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #005E93;
+    color: #D3EDFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.articleGotoInner img {
+    display: block;
+    margin-bottom: -2px;
+}
+/* second page styles ends */
