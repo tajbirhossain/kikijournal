@@ -27,6 +27,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Futura_Mdcn_BT';
+    src: url('../fonts/FuturaMediumCondensedBT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'futura_xblkcnit_bt';
@@ -599,3 +605,63 @@ footer {
     margin-bottom: -2px;
 }
 /* second page styles ends */
+
+
+
+
+
+
+
+
+
+/* third page styles */
+.filmBanner {
+    padding-bottom: 15px;
+}
+
+
+.filmSlider {
+    padding-bottom: 190px;
+    background-color: #D3EDFF;
+}
+.filmSliderWrap {
+    margin-bottom: 35px;
+}
+.singleSlide {
+    height: 742px;
+    padding-top: 40px;
+    background-color: #FAFAFA;
+}
+.singleSlide h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Futura_Mdcn_BT", sans-serif;
+    margin-bottom: 45px;
+}
+.singleSlide img {
+    max-width: 260px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+.singleSlide small {
+    display: block;
+    font-size: 12px;
+    font-family: "Futura_Mdcn_BT", sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.singleSlide h4 {
+    font-size: 20px;
+    color: #005E93;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.singleSlide p {
+    text-align: center;
+    margin-bottom: 17px;
+    font-size: 18px;
+}
+/* third page styles ends */
